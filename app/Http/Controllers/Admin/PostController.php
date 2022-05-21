@@ -15,7 +15,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
+        //$posts = Post::all();
+        $posts = Post::orderBy('id', 'DESC')->paginate(5);
         return view('admin.index', compact('posts'));
     }
 
@@ -48,7 +49,8 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        //
+        $post = Post::FindOrFail($id);
+        return view('admin.show', compact('post'));
     }
 
     /**

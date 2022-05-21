@@ -24,17 +24,18 @@
               </div>
             </div>
             <div class="my-card-footer">
-              <a href="#">Leggi di piu...</a>
+              <a href="{{ route('admin.posts.show', $post->id) }}">Leggi di piu...</a>
             </div>
           </div>
         </div>
         @endforeach
       </div>
-    <div class="col-3">
-      <div class="my-sidebar">
-        Questo blog si mantiene grazie a:
-      </div>
-    </div>
+    @include('partials/sidebar')
+  </div>
+
+  <div class="d-flex justify-content-center pt-5">
+    {{-- Mostro una nav per cambiare pagina --}}
+    {{ $posts->links() }}
   </div>
 </div>
 @endsection
