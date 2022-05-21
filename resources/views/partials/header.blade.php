@@ -1,5 +1,5 @@
 <header class="container-fluid">
-  <nav class="d-flex justify-content-between">
+  <nav class="d-flex justify-content-between align-items-center">
     <a href="#" class="brand">Cochy Press</a>
     <ul class="d-flex">
       {{-- <li>Nome utente</li>
@@ -8,7 +8,7 @@
       @if (Route::has('login'))
         {{-- § Caso 1: l'utente è autenticato, mostro Nome utente e logout --}}
         @auth
-          <li><a href="{{ Route('admin.home') }}">{{ Auth::user()->name }}</a></li>
+          <li><a href="{{ Route('admin.home') }}">{{ ucfirst(Auth::user()->name) }}</a></li>
           <li><a href="{{ Route('admin.posts.index') }}">Posts</a></li>
           <li>
             <a href="{{ route('logout') }}"
