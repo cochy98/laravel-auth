@@ -1,6 +1,6 @@
 <header class="container-fluid">
   <nav class="d-flex justify-content-between align-items-center">
-    <a href="#" class="brand">Cochy Press</a>
+    <a href="{{ url('/') }}" class="brand">Cochy Press</a>
     <ul class="d-flex">
       {{-- <li>Nome utente</li>
       <li>logout</li> --}}

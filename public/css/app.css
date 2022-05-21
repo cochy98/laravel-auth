@@ -12178,6 +12178,25 @@ fieldset:disabled .btn {
   }
 }
 
+div.guest-home {
+  position: relative;
+  height: calc(100vh - 71px);
+}
+
+div.guest-home div.message {
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+div.guest-home div.message a.btn {
+  color: white;
+  margin-top: 2rem;
+}
+
 header {
   background-color: #c49b70;
 }

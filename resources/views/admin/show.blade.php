@@ -25,8 +25,8 @@
   </div>
 
   <div class="d-flex justify-content-center pt-5">
-    <a href="{{ route('admin.posts.show', --$post->id) }}" class="btn my-btn btn-secondary">Prev</a>
-    <a href="{{ route('admin.posts.show', ++$post->id) }}" class="btn my-btn btn-success">Next</a>
+    <a href="{{ route('admin.posts.show', $post->id - 1) }}" class="btn my-btn btn-secondary">Prev</a>
+    <a href="{{ route('admin.posts.show', $post->id + 1) }}" class="btn my-btn btn-success">Next</a>
   </div>
 </div>
 @endsection

@@ -7,6 +7,26 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+// & Regole di stile della guest home
+div.guest-home {
+  position: relative;
+  height: calc(100vh - 71px);
+
+  div.message {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    a.btn {
+      color: white;
+      margin-top: 2rem;
+    }
+  }
+}
+
 // § Regole di stile per l'header
 header {
   background-color: #c49b70;
@@ -79,6 +99,7 @@ div.admin-page {
   }
 }
 
+// % Regole di stile per la show dei post per l'utente registrato
 div.show-page {
   h4 {
     background-color: #c49b70;
