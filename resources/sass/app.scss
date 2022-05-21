@@ -6,3 +6,29 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+header {
+  nav {
+    padding: 1rem;
+
+    a.brand {
+      font-size: 1.5rem;
+      color: black;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style-type: none;
+
+      li {
+        padding-left: .5rem;
+
+        a {
+          color: black;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
